@@ -32,7 +32,7 @@ const handler = withAuthkit((request, auth) =>
               },
             ],
           };
-        },
+        }
       );
 
       server.tool(
@@ -72,7 +72,7 @@ const handler = withAuthkit((request, auth) =>
               ],
             };
           }
-        },
+        }
       );
 
       server.tool(
@@ -106,7 +106,7 @@ const handler = withAuthkit((request, auth) =>
               ],
             };
           }
-        },
+        }
       );
     },
     {
@@ -119,8 +119,8 @@ const handler = withAuthkit((request, auth) =>
       sseEndpoint: "/sse",
       maxDuration: 600,
       verboseLogs: true,
-    },
-  )(request),
+    }
+  )(request)
 );
 
 export { handler as GET, handler as POST };

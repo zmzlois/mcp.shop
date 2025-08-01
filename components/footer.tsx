@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
-import { FaXTwitter, FaLinkedin, FaYoutube } from "react-icons/fa6";
+import { FaXTwitter, FaLinkedin, FaYoutube, FaGithub } from "react-icons/fa6";
 
 export default function Footer() {
   return (
@@ -23,6 +23,14 @@ export default function Footer() {
       </div>
       {/* Social icons on the right */}
       <div className="flex items-center gap-4">
+        <Link
+          href="https://github.com/workos/mcp.shop"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="GitHub"
+        >
+          <FaGithub className="footer-social-icon w-5 h-5 text-neutral-400 transition" />
+        </Link>
         <Link
           href="https://x.com/WorkOS?utm_source=mcp_shop&utm_medium=referral&utm_campaign=workos_mcp"
           target="_blank"
